@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Anton;src:url(/usr/share/fonts/truetype/google-fonts/ofl/anton/Anton-Regular.ttf)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1024px;height:1024px;background:#f4efe4;color:#151515;font-family:Inter,sans-serif;overflow:hidden}
+.page{position:absolute;inset:18px;border:3px solid #151515;padding:14px 18px}
+.mast{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px double #151515;padding-bottom:6px}
+.mast h1{font-family:Anton;font-size:62px;letter-spacing:1px;line-height:.95;text-transform:uppercase}
+.mast .date{text-align:right;font-weight:700;font-size:17px;line-height:1.25}
+.mast .date b{display:block;font-family:Anton;font-weight:400;font-size:30px;color:#b3141b;letter-spacing:.5px}
+.grid{display:grid;grid-template-columns:1.55fr 1fr;gap:14px;margin-top:10px}
+.kick{font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#b3141b}
+.hl{font-family:Anton;text-transform:uppercase;line-height:1.02}
+.dek{font-size:15.5px;line-height:1.32;margin-top:4px}
+.hero .hl{font-size:46px}
+.hero svg{display:block;width:100%;height:auto;margin:8px 0 6px;border:2px solid #151515}
+.card{border-top:2px solid #151515;padding-top:7px;margin-top:9px}
+.card:first-child{margin-top:0}
+.card .hl{font-size:27px}
+.row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:10px;border-top:3px solid #151515;padding-top:8px}
+.row .hl{font-size:23px}
+.row .dek{font-size:14.5px;line-height:1.3}
+.ico{float:right;margin:0 0 4px 8px}
+.nums{background:#151515;color:#f4efe4;margin-top:12px;padding:10px 12px}
+.nums .n{display:flex;align-items:center;gap:10px;border-top:1px solid #555;padding:5px 0}
+.nums .n b{font-family:Anton;font-weight:400;font-size:30px;color:#ff5a4f;min-width:70px;text-align:right}
+.nums .n span{font-size:13.5px;line-height:1.25;font-weight:600}
+.foot{position:absolute;left:18px;right:18px;bottom:10px;border-top:2px solid #151515;padding-top:6px;font-size:14px;display:flex;justify-content:space-between;font-weight:700}
+</style></head><body>
+<div class="page">
+  <div class="mast">
+    <h1>The World Today</h1>
+    <div class="date"><b>TUESDAY 24 NOV 2026</b>One day · nine stories</div>
+  </div>
+
+  <div class="grid">
+    <div class="hero">
+      <div class="kick">War at sea · Libya</div>
+      <div class="hl">Ukraine sinks Russian warship in Libyan port</div>
+      <!-- illustration: map strip with Benghazi and a sinking ship -->
+      <svg viewBox="0 0 560 250" xmlns="http://www.w3.org/2000/svg">
+        <rect width="560" height="250" fill="#9fc3d6"/>
+        <!-- coast of Libya -->
+        <path d="M0 150 C80 140 120 165 180 160 C230 156 250 120 300 118 C350 116 380 150 430 150 C480 150 520 140 560 145 L560 250 L0 250 Z" fill="#e3cf9d" stroke="#151515" stroke-width="2"/>
+        <text x="40" y="225" font-family="Anton" font-size="30" fill="#8a6d33" letter-spacing="6">LIBYA</text>
+        <circle cx="300" cy="122" r="7" fill="#b3141b" stroke="#151515" stroke-width="2"/>
+        <text x="312" y="145" font-family="Inter" font-weight="800" font-size="17" fill="#151515">BENGHAZI</text>
+        <text x="40" y="40" font-family="Inter" font-weight="700" font-size="15" fill="#2c5a73">MEDITERRANEAN SEA</text>
+        <!-- drones trails -->
+        <g stroke="#151515" stroke-width="2" stroke-dasharray="6 5" fill="none">
+          <path d="M60 70 Q160 80 245 88"/><path d="M90 100 Q170 100 245 95"/><path d="M130 52 Q200 70 250 84"/>
+        </g>
+        <g fill="#151515">
+          <polygon points="56,66 70,70 56,74"/><polygon points="86,96 100,100 86,104"/><polygon points="126,48 140,52 126,56"/>
+        </g>
+        <!-- capsized corvette -->
+        <g transform="translate(262 95) rotate(-18)">
+          <path d="M-40 0 L45 0 L35 16 L-32 16 Z" fill="#4b4f55" stroke="#151515" stroke-width="2"/>
+          <rect x="-12" y="-14" width="22" height="14" fill="#4b4f55" stroke="#151515" stroke-width="2"/>
+          <line x1="0" y1="-14" x2="0" y2="-30" stroke="#151515" stroke-width="2"/>
+        </g>
+        <!-- fire & smoke -->
+        <path d="M250 82 C246 66 260 62 256 48 C268 58 272 70 266 84 Z" fill="#f08a24" stroke="#151515" stroke-width="1.5"/>
+        <ellipse cx="275" cy="30" rx="34" ry="14" fill="#555" opacity=".7"/>
+        <ellipse cx="300" cy="14" rx="26" ry="10" fill="#555" opacity=".5"/>
+        <rect x="370" y="20" width="180" height="62" fill="#f4efe4" stroke="#151515" stroke-width="2"/>
+        <text x="382" y="46" font-family="Anton" font-size="24" fill="#b3141b">7 SEA DRONES</text>
+        <text x="382" y="72" font-family="Inter" font-weight="700" font-size="15" fill="#151515">corvette Merkury sunk</text>
+      </svg>
+      <div class="dek">Zelenskyy says seven Ukrainian naval drones sank the new Russian corvette <b>Merkury</b> at Benghazi and hit a cargo ship — the war now reaches North Africa.</div>
+
+      <div class="card">
+        <div class="kick">Gulf · Oil</div>
+        <div class="hl" style="font-size:31px">Three tankers ablaze in Strait of Hormuz</div>
+        <svg viewBox="0 0 560 120" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:auto;margin:6px 0 4px;border:2px solid #151515">
+          <rect width="560" height="120" fill="#9fc3d6"/>
+          <path d="M0 0 L560 0 L560 30 C470 44 400 26 330 40 C260 54 200 30 120 44 C70 52 30 40 0 46 Z" fill="#e3cf9d" stroke="#151515" stroke-width="2"/>
+          <path d="M0 120 L560 120 L560 96 C480 84 420 104 350 92 C290 82 230 100 170 90 C110 82 60 98 0 92 Z" fill="#e3cf9d" stroke="#151515" stroke-width="2"/>
+          <text x="14" y="24" font-family="Anton" font-size="18" fill="#8a6d33" letter-spacing="4">IRAN</text>
+          <text x="470" y="114" font-family="Anton" font-size="18" fill="#8a6d33" letter-spacing="4">OMAN</text>
+          <g stroke="#151515" stroke-width="2">
+            <g transform="translate(150 66)"><path d="M-34 0 L34 0 L28 12 L-30 12 Z" fill="#3a3d42"/><rect x="18" y="-9" width="12" height="9" fill="#3a3d42"/><path d="M-6 0 C-10 -14 2 -16 -2 -30 C10 -20 12 -10 6 0 Z" fill="#f08a24"/></g>
+            <g transform="translate(290 70)"><path d="M-34 0 L34 0 L28 12 L-30 12 Z" fill="#3a3d42"/><rect x="18" y="-9" width="12" height="9" fill="#3a3d42"/><path d="M-6 0 C-10 -14 2 -16 -2 -30 C10 -20 12 -10 6 0 Z" fill="#f08a24"/></g>
+            <g transform="translate(420 64)"><path d="M-34 0 L34 0 L28 12 L-30 12 Z" fill="#3a3d42"/><rect x="18" y="-9" width="12" height="9" fill="#3a3d42"/><path d="M-6 0 C-10 -14 2 -16 -2 -30 C10 -20 12 -10 6 0 Z" fill="#f08a24"/></g>
+          </g>
+          <text x="232" y="112" font-family="Inter" font-weight="800" font-size="14" fill="#151515">STRAIT OF HORMUZ</text>
+        </svg>
+        <div class="dek">Iran's Revolutionary Guards say mines set three oil tankers on fire in the world's key oil chokepoint.</div>
+      </div>
+    </div>
+
+    <div class="side">
+      <div class="card">
+        <div class="kick">Climate</div>
+        <svg class="ico" width="62" height="62" viewBox="0 0 62 62"><circle cx="31" cy="31" r="26" fill="#9fc3d6" stroke="#151515" stroke-width="2.5"/><path d="M14 22 C22 18 26 26 33 22 C38 19 42 24 47 22 M12 38 C20 34 28 42 36 37 C42 34 46 40 50 38" stroke="#4f8a3a" stroke-width="5" fill="none"/><line x1="8" y1="54" x2="54" y2="8" stroke="#b3141b" stroke-width="5"/></svg>
+        <div class="hl">COP31 climate talks collapse</div>
+        <div class="dek">EU and others reject the Antalya deal for omitting fossil fuels — first UN climate summit without a cover deal since 2009.</div>
+      </div>
+      <div class="card">
+        <div class="kick">Tech · Washington</div>
+        <svg class="ico" width="62" height="62" viewBox="0 0 62 62"><rect x="13" y="13" width="36" height="36" fill="#76b900" stroke="#151515" stroke-width="2.5"/><g stroke="#151515" stroke-width="2.5"><line x1="21" y1="4" x2="21" y2="13"/><line x1="31" y1="4" x2="31" y2="13"/><line x1="41" y1="4" x2="41" y2="13"/><line x1="21" y1="49" x2="21" y2="58"/><line x1="31" y1="49" x2="31" y2="58"/><line x1="41" y1="49" x2="41" y2="58"/><line x1="4" y1="21" x2="13" y2="21"/><line x1="4" y1="41" x2="13" y2="41"/><line x1="49" y1="21" x2="58" y2="21"/><line x1="49" y1="41" x2="58" y2="41"/></g><text x="31" y="37" text-anchor="middle" font-family="Anton" font-size="15">CEO</text></svg>
+        <div class="hl">Nvidia brings back Jensen Huang</div>
+        <div class="dek">Board reverses course and reinstates its co-founder as CEO; bipartisan backlash in Congress.</div>
+      </div>
+      <div class="card">
+        <div class="kick">Europe · Russia</div>
+        <svg class="ico" width="62" height="62" viewBox="0 0 62 62"><circle cx="31" cy="31" r="26" fill="#1f3f8f" stroke="#151515" stroke-width="2.5"/><g fill="#f5cc2a"><circle cx="31" cy="13" r="3"/><circle cx="31" cy="49" r="3"/><circle cx="13" cy="31" r="3"/><circle cx="49" cy="31" r="3"/><circle cx="18" cy="18" r="3"/><circle cx="44" cy="18" r="3"/><circle cx="18" cy="44" r="3"/><circle cx="44" cy="44" r="3"/></g><text x="31" y="38" text-anchor="middle" font-family="Anton" font-size="18" fill="#fff">22</text></svg>
+        <div class="hl">EU unveils 22nd Russia sanctions package</div>
+        <div class="dek">Targets ~60 banks, 70+ shadow-fleet tankers, crypto networks and Russian athletes.</div>
+      </div>
+      <div class="nums">
+        <div class="kick" style="color:#f4efe4">The day in numbers</div>
+        <div class="n"><b>7</b><span>Ukrainian sea drones sent against one Russian corvette</span></div>
+        <div class="n"><b>3</b><span>tankers burning in Hormuz</span></div>
+        <div class="n"><b>2009</b><span>last time a UN climate summit ended with no deal</span></div>
+        <div class="n"><b>~60</b><span>Russian banks targeted by new EU sanctions</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div><div class="kick">Indonesia</div><div class="hl">Candy factory fire: 24 dead, ~30 missing</div><div class="dek">Rescuers search the ruins in Banten, Java.</div></div>
+    <div><div class="kick">Sudan</div><div class="hl">Drones hit near Khartoum</div><div class="dek">Four killed; a UN building damaged.</div></div>
+    <div><div class="kick">Nigeria</div><div class="hl">Overcrowded boat capsizes</div><div class="dek">At least 29 dead in Bayelsa state.</div></div>
+    <div><div class="kick">Baltics</div><div class="hl">Moscow warns Estonia</div><div class="dek">Kremlin fumes as Tallinn readies to shut the border.</div></div>
+  </div>
+  <div class="foot"><span>Ukraine–Russia war spreads to Africa · Gulf shipping under fire · Climate diplomacy stalls</span><span>24·11·2026</span></div>
+</div>
+</body></html>
